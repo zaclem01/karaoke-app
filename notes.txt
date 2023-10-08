@@ -1,0 +1,13 @@
+playBtn.addEventListener("click", () => {
+  if (playBtn.innerText === "Start Mic") {
+    mic = new Tone.UserMedia();
+    var speakers = Tone.getDestination();
+    mic.connect(speakers);
+    mic.open();
+    mic.toDestination();
+    playBtn.innerText = "Stop Mic"
+  } else {
+    mic.close()
+    playBtn.innerText = "Start Mic"
+  }
+});
