@@ -1,23 +1,12 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Header } from "./components/layout/Header";
 import { Container } from "./components/layout/Container";
 import { LeftSide } from "./components/layout/LeftSide";
 import { RightSide } from "./components/layout/RightSide";
 import { SearchContainer } from "./components/search/SearchContainer";
-import youtube from "./utils/api";
+import { RotationContainer } from "./components/rotation/RotationContainer";
 
 function App() {
-  useEffect(() => {
-    // youtube.get('/search', {
-    //   params: {
-    //     q: 'taylor swift',
-    //   }
-    // }).then(response => {
-    //   console.log(response.data)
-    //   setSearchList(response.data.items)
-    // })
-  }, []);
-
   return (
     <>
       <Header />
@@ -26,7 +15,7 @@ function App() {
           <SearchContainer />
         </LeftSide>
         <RightSide>
-          <div>Thing</div>
+          <RotationContainer />
         </RightSide>
       </Container>
     </>

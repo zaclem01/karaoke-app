@@ -7,7 +7,7 @@ type RotationStore = {
   remove: (index: number) => void;
 };
 
-type Rotation = {
+export type Rotation = {
   singer: string;
   video: YoutubeItem;
 };
