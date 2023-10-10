@@ -6,7 +6,7 @@ export const RotationContainer = () => {
   const rotationList = useRotationStore(state => state.rotation);
   
   return (
-    <div className="p-4">
+    <div>
       <div className="flex justify-between p-2 bg-primary text-text">
         <div>Rotation</div>
         <button>

@@ -5,7 +5,7 @@ export const LeftSide: FunctionComponent<PropsWithChildren> = ({
 }) => {
   return (
     <>
-      <div className="col-span-2">{children}</div>
+      <div className="col-span-2 p-4">{children}</div>
     </>
   );
 };

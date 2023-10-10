@@ -6,7 +6,7 @@ export const youtube = axios.create({
     baseURL: 'https://www.googleapis.com/youtube/v3',
     params: {
         part: 'snippet',
-        channelId: 'UCwTRjvjVge51X-ILJ4i22ew',
+        channelId: 'UCYi9TC1HC_U2kaRAK6I4FSQ',
         maxResults: 5,
         key: KEY,
     }

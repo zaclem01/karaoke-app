@@ -3,12 +3,10 @@ import { YoutubeItem } from "../../types";
 import { SearchBar } from "./SearchBar";
 import { SearchItem } from "./SearchItem";
 import { youtube } from "../../utils/api";
-import { useRotationStore } from "../../store/useRotationStore";
 
 export const SearchContainer: FunctionComponent = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchList, setSearchList] = useState<YoutubeItem[]>([]);
-  const rotationList = useRotationStore((state) => state.rotation);
 
   const handleChange = (term: string) => {
     setSearchTerm(term);
@@ -27,7 +25,7 @@ export const SearchContainer: FunctionComponent = () => {
   };
 
   return (
-    <div className="p-4">
+    <div>
       <SearchBar
         term={searchTerm}
         onChange={handleChange}

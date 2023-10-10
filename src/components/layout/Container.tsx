@@ -5,7 +5,7 @@ export const Container: FunctionComponent<PropsWithChildren> = ({
 }) => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-4">{children}</div>
+      <div className="grid grid-cols-3">{children}</div>
     </>
   );
 };
